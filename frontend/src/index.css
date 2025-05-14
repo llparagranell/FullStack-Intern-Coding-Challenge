@@ -1,0 +1,127 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #23272f; /* soft dark background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  background: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  width: 100%;
+  gap: 1rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+input, button {
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4f8cff;
+  background: #f0f6ff;
+}
+
+button {
+  background: #4f8cff;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+p[style*="color: red"] {
+  background: #ffeaea;
+  color: #d32f2f;
+  padding: 0.5rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.store-list, .ratings-list {
+  background: #2d323c;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.16);
+  padding: 2rem 2.5rem;
+  max-width: 700px;
+  width: 100%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.store-item, .rating-item {
+  background: #23272f;
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.store-item h3, .rating-item h3 {
+  color: #4f8cff;
+  margin: 0 0 0.25rem 0;
+}
+
+.store-item p, .rating-item p {
+  color: #e0e6ed;
+  margin: 0.1rem 0;
+}
+
+.rating-stars {
+  color: #ffd700;
+  font-size: 1.2rem;
+}
+
+.store-actions, .rating-actions {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.store-actions button, .rating-actions button {
+  background: #4f8cff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.store-actions button:hover, .rating-actions button:hover {
+  background: #2563eb;
+}
+
